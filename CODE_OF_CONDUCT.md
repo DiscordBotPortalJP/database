@@ -1,76 +1,47 @@
-# Contributor Covenant Code of Conduct
+# 投稿者規約行動規範
 
-## Our Pledge
+## 誓い
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, sex characteristics, gender identity and expression,
-level of experience, education, socio-economic status, nationality, personal
-appearance, race, religion, or sexual identity and orientation.
+開放的で歓迎される環境を醸成するために、私たちは貢献者と管理者として、年齢、体格、障害、民族性、性の特徴、性自認と表現、経験のレベル、教育、社会経済的地位、国籍、身だしなみ、人種、宗教、性的アイデンティティと志向に関係なく、プロジェクトとコミュニティへの参加をハラスメントのないものにすることを誓約します。
 
-## Our Standards
+## 当コミュニティの基準
 
-Examples of behavior that contributes to creating a positive environment
-include:
+肯定的な環境づくりに貢献する行動の例としては、以下のようなものがあります。
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+* 歓迎され、包容力のある言葉を使う
+* 異なる視点や経験を尊重すること
+* 建設的な批判を快く受け入れる
+* 地域にとって何が一番いいのかを重視する
+* 他の地域住民への共感を示す
 
-Examples of unacceptable behavior by participants include:
+参加者による容認できない行動の例としては、以下のようなものがあります。
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
- advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
- address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
- professional setting
+* 性的な言葉やイメージの使用、歓迎されない性的な注意や誘い。
+* 荒らし、侮辱的/嘲笑的なコメント、個人的または政治的な攻撃
+* 公私のハラスメント
+* 物理的または電子的なアドレスなど、他人の個人情報を明示的な許可なく公開すること。
+* その他、職業上不適切と合理的に考えられる行為
 
-## Our Responsibilities
+## 私たちの責任
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+プロジェクトメンテナは、受け入れられる行動の基準を明確にする責任があり、受け入れられない行動があった場合には、適切かつ公正な是正措置をとることが期待されています。
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+プロジェクトメンテナは、この行動規範に沿っていないコメント、コミット、コード、wiki編集、問題、その他の投稿を削除、編集、拒否したり、不適切、脅迫的、攻撃的、有害と判断したその他の行動に対して、一時的または恒久的に投稿者を追放する権利と責任を有します。
 
-## Scope
+## 範囲
 
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
+この行動規範は、個人がプロジェクトやコミュニティを代表して活動する場合、プロジェクトスペース内と公共スペースの両方に適用されます。プロジェクトやコミュニティを代表する行為の例としては、プロジェクトの公式メールアドレスの使用、ソーシャルメディアの公式アカウントでの投稿、オンラインまたはオフラインのイベントで任命された代表者として行動することなどが挙げられる。プロジェクトの代表者は、プロジェクトの管理者によってさらに定義され、明確にされることがあります。
 
-## Enforcement
+## 施行
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at contact@discordbot.jp. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
+虐待、嫌がらせ、またはその他の容認できない行為があった場合は、プロジェクトチーム（contact@discordbot.jp）に連絡して報告することができます。すべての苦情は審査・調査され、状況に応じて必要かつ適切と判断される対応がとられます。プロジェクトチームは、事件の報告者に関して守秘義務を負う。具体的な実施方針の詳細については、別途掲載することがある。
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
+行動規範を誠実に守らない、あるいは実施しないプロジェクトメンテナは、プロジェクトの指導者の他のメンバーが決定するように、一時的または恒久的な報復措置に直面する可能性がある。
 
-## Attribution
+## 帰属
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+この行動規範は、https://www.contributor-covenant.org/version/1/4/code-of-conduct.html で入手可能なコントリビューター規約のバージョン 1.4 を参考にしています。
 
-[homepage]: https://www.contributor-covenant.org
+この行動規範に関するよくある質問への回答は、https://www.contributor-covenant.org/faq を参照してください。
 
-For answers to common questions about this code of conduct, see
-https://www.contributor-covenant.org/faq
+www.DeepL.com/Translator（無料版）で翻訳しました。
