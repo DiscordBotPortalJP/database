@@ -13,10 +13,10 @@ bot = commands.Bot(
 bot.bots_data = {}
 
 # 登録時の制限データ
-regist_rules = {}
-regist_rules['bot_name_max_length'] = 50
-regist_rules['bot_name_min_length'] = 3
-bot.regist_rules = regist_rules
+register_rules = {}
+register_rules['bot_name_max_length'] = 50
+register_rules['bot_name_min_length'] = 3
+bot.register_rules = register_rules
 
 bot.border_color = 0x7289DA
 
@@ -32,7 +32,7 @@ async def on_ready():
     print(f'discord.py {dpy_ver} python {python_var}')
     print('--------------------------------')
 
-bot.load_extension('cogs.bot_regist')
+bot.load_extension('cogs.bot_register')
 bot.load_extension('cogs.bot_show')
 
 bot.run(os.environ['DISCORD_BOT_DB_TOKEN'])
