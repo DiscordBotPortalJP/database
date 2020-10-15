@@ -10,7 +10,7 @@ class BotRegister(commands.Cog):
     async def register_bot(self, ctx, *, bot_name=None):
         """ボットのデータを登録する"""
         # ボット名チェック
-        if error_msg := self._check_bot_name(bot_name):
+        if error_msg := self._validate_bot_name(bot_name):
             await self._put_error_msg(error_msg, ctx.channel)
             return
 
@@ -19,10 +19,10 @@ class BotRegister(commands.Cog):
         result = f'『{bot_name}』を登録しました'
         await ctx.send(result)
 
-    def _check_bot_name(self, bot_name):
+    def _validate_bot_name(self, bot_name):
         """入力名チェック（とりあえず長さのみ）"""
-        max_length = self.bot.register_rules['bot_name_max_length']
-        min_length = self.bot.register_rules['bot_name_min_length']
+        max_length = self.bot.rules['bot_name_max_length']
+        min_length = self.bot.rules['bot_name_min_length']
 
         error_msg = ''
         if not bot_name:
