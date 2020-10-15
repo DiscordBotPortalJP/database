@@ -1,18 +1,16 @@
 import discord
 from discord.ext import commands
 
+MAX_BOT_LIST_LENGTH = 1950
 
-class bot_show(commands.Cog):
+
+class botShow(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.max_bot_list_length = 1950  # 出力の際の文字数制限
 
     @commands.command(aliases=['show', 'view'])
     async def show_bots(self, ctx):
-        """ボットのデータを一覧で出力（現時点では2000文字制限未対応）"""
-        if ctx.author.bot:
-            return
-
+        """ボットのデータを一覧で出力（現時点では2048文字制限未対応）"""
         await self._put_bot_list_all(ctx)
 
     async def _put_bot_list_all(self, ctx):
@@ -21,8 +19,8 @@ class bot_show(commands.Cog):
         break_suffix = ''
         count = 0
         for name in self.bot.bots_data.values():
-            if len(bot_list) > self.max_bot_list_length:
-                break_msg = f'※ {self.max_bot_list_length}文字を超えたので全部は表示していません'
+            if len(bot_list) > MAX_BOT_LIST_LENGTH:
+                break_msg = f'※ {MAX_BOT_LIST_LENGTH}文字を超えたので全部は表示していません'
                 break_suffix = '… …'
                 break
             count += 1
@@ -45,4 +43,4 @@ class bot_show(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(bot_show(bot))
+    bot.add_cog(botShow(bot))
