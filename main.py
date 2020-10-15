@@ -32,7 +32,7 @@ async def on_ready():
     print(f'discord.py {dpy_ver} python {python_var}')
     print('--------------------------------')
 
-    bot.load_extension('cogs.bot_regist')
-    bot.load_extension('cogs.bot_show')
+bot.load_extension('cogs.bot_regist')
+bot.load_extension('cogs.bot_show')
 
 bot.run(os.environ['DISCORD_BOT_DB_TOKEN'])
