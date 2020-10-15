@@ -2,30 +2,24 @@ import discord
 from discord.ext import commands
 
 
-class bot_regist(commands.Cog):
+class botRegist(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
     @commands.command(aliases=['add', 'regist'])
-    async def regist_bot(self, ctx, *, bot_name=None):
+    async def registBot(self, ctx, *, bot_name=None):
         """ボットのデータを登録する"""
-        if ctx.author.bot:
-            return
-
-        '''名前チェック'''
+        # ボット名チェック
         if not await self._check_bot_name(bot_name, ctx.message.channel):
             return
 
-        '''登録'''
-        if self._save_bot_data(ctx.message.id, bot_name):
-            result = f'『{bot_name}』を登録しました'
-            await ctx.send(result)
-        else:
-            result = '何らかの理由で登録に失敗しました'
-            await self._put_error_msg(result, ctx.message.channel)
+        # 登録
+        self._save_bot_data(ctx.message.id, bot_name)
+        result = f'『{bot_name}』を登録しました'
+        await ctx.send(result)
 
     async def _check_bot_name(self, bot_name, ch):
-        '''入力名チェック（とりあえず長さのみ）'''
+        """入力名チェック（とりあえず長さのみ）"""
         max_length = self.bot.regist_rules['bot_name_max_length']
         min_length = self.bot.regist_rules['bot_name_min_length']
 
@@ -45,11 +39,8 @@ class bot_regist(commands.Cog):
 
     def _save_bot_data(self, message_id: int, bot_name):
         """登録実行"""
-        try:  # 形式的にエラーハンドリング
-            self.bot.bots_data[message_id] = bot_name
-        except Exception:
-            return False
-        return True
+        self.bot.bots_data[message_id] = bot_name
+        return
 
     async def _put_error_msg(self, result, ch):
         embed = discord.Embed(
@@ -61,4 +52,4 @@ class bot_regist(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(bot_regist(bot))
+    bot.add_cog(botRegist(bot))
