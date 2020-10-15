@@ -13,10 +13,10 @@ bot = commands.Bot(
 bot.bots_data = {}
 
 # 登録時の制限データ
-register_rules = {}
-register_rules['bot_name_max_length'] = 50
-register_rules['bot_name_min_length'] = 3
-bot.register_rules = register_rules
+rules = {}
+rules['bot_name_max_length'] = 50
+rules['bot_name_min_length'] = 3
+bot.rules = rules
 
 bot.border_color = 0x7289DA
 
