@@ -4,7 +4,7 @@ from discord.ext import commands
 MAX_BOT_LIST_LENGTH = 1950
 
 
-class botShow(commands.Cog):
+class BotShow(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -43,4 +43,4 @@ class botShow(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(botShow(bot))
+    bot.add_cog(BotShow(bot))
