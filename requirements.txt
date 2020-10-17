@@ -1,0 +1,9 @@
+fastapi
+email-validator
+uvicorn
+psycopg2
+psycopg2-binary
+sqlalchemy
+redis
+hiredis
+flake8
