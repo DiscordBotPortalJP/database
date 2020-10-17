@@ -32,6 +32,6 @@ def put_bots(bot: Bot):
     return {'message': 'Hello World'}
 
 
-@app.delete('/api/bots')
+@app.delete('/api/bots/{id}')
 def delete_bots():
     return {'message': 'Hello World'}
