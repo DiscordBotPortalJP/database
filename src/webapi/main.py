@@ -18,7 +18,7 @@ def get_bots():
 
 
 @app.get('/api/bots/{id}')
-def get_bot():
+def get_bot(id: int):
     return {'message': 'Hello World'}
 
 
@@ -28,10 +28,10 @@ def post_bots(bot: Bot):
 
 
 @app.put('/api/bots/{id}')
-def put_bots(bot: Bot):
+def put_bots(id: int, bot: Bot):
     return {'message': 'Hello World'}
 
 
 @app.delete('/api/bots/{id}')
-def delete_bots():
+def delete_bots(id: int):
     return {'message': 'Hello World'}
