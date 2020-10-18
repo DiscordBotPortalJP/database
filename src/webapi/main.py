@@ -1,14 +1,13 @@
 from fastapi import FastAPI, status
 from pydantic import BaseModel
 
-
 class Bot(BaseModel):
     name: str
 
 
 app = FastAPI(
     title='Discord Bot Database',
-    docs_url='/'
+    docs_url='/docs'
 )
 
 
