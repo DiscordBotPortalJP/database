@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, status
 from pydantic import BaseModel
 
 
@@ -22,16 +22,16 @@ def get_bot(id: int):
     return {'message': 'Hello World'}
 
 
-@app.post('/api/bots')
+@app.post('/api/bots', status_code=status.HTTP_201_CREATED)
 def post_bots(bot: Bot):
     return {'message': 'Hello World'}
 
 
-@app.put('/api/bots/{id}')
+@app.put('/api/bots/{id}', status_code=status.HTTP_200_OK)
 def put_bots(id: int, bot: Bot):
     return {'message': 'Hello World'}
 
 
-@app.delete('/api/bots/{id}')
+@app.delete('/api/bots/{id}', status_code=status.HTTP_204_NO_CONTENT)
 def delete_bots(id: int):
     return {'message': 'Hello World'}
