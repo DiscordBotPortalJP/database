@@ -1,5 +1,7 @@
 from fastapi import FastAPI, status
 from pydantic import BaseModel
+from starlette.responses import RedirectResponse
+
 
 class Bot(BaseModel):
     name: str
@@ -34,3 +36,13 @@ def put_bots(id: int, bot: Bot):
 @app.delete('/api/bots/{id}', status_code=status.HTTP_204_NO_CONTENT)
 def delete_bots(id: int):
     return {'message': 'Hello World'}
+
+
+@app.get('/')
+def index(status_code=status.HTTP_307_TEMPORARY_REDIRECT):
+    return RedirectResponse(url='/docs')
+
+
+@app.get('/api')
+def api_index(status_code=status.HTTP_307_TEMPORARY_REDIRECT):
+    return RedirectResponse(url='/docs')
