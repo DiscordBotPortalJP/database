@@ -4,9 +4,15 @@ from discord.ext import commands
 from datetime import datetime, timedelta
 import platform
 
+allowed_mentions = discord.AllowedMentions(
+    everyone=False,
+    users=False,
+    roles=False
+)
 
 bot = commands.Bot(
-    command_prefix='d:'
+    command_prefix='d:',
+    allowed_mentions=allowed_mentions
 )
 
 # 登録ボットデータ key=追加された時のmessage.id value=ボット名
