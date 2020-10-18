@@ -1,10 +1,6 @@
 from fastapi import FastAPI, status
-from pydantic import BaseModel
 from starlette.responses import RedirectResponse
-
-
-class Bot(BaseModel):
-    name: str
+from .schemas import DiscordBot
 
 
 app = FastAPI(
@@ -24,12 +20,12 @@ def get_bot(id: int):
 
 
 @app.post('/api/bots', status_code=status.HTTP_201_CREATED)
-def post_bots(bot: Bot):
+def post_bots(bot: DiscordBot):
     return {'message': 'Hello World'}
 
 
 @app.put('/api/bots/{id}', status_code=status.HTTP_200_OK)
-def put_bots(id: int, bot: Bot):
+def put_bots(id: int, bot: DiscordBot):
     return {'message': 'Hello World'}
 
 
