@@ -1,3 +1,4 @@
+discord.py
 fastapi
 email-validator
 uvicorn
